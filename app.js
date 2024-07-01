@@ -17,12 +17,7 @@ const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 
 // use the cors middleware
-app.use(
-  cors({
-    origin: "*", // Allow all origins
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // use the cookie-parser middleware
 app.use(cookieParser());
